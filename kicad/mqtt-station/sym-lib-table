@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name mqtt-station-rescue)(type Legacy)(uri ${KIPRJMOD}/mqtt-station-rescue.lib)(options "")(descr ""))
+  (lib (name mqtt-station)(type Legacy)(uri ${KIPRJMOD}/mqtt-station.lib)(options "")(descr ""))
+)
