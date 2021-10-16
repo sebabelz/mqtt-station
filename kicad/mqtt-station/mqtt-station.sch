@@ -696,12 +696,12 @@ Wire Wire Line
 Wire Wire Line
 	4600 6950 4600 6800
 $Comp
-L mqtt-station:ESP-WROOM-32 U101
+L z_ic:ESP-WROOM-32 U101
 U 1 1 614160B5
 P 6600 2800
 F 0 "U101" H 6600 3565 50  0000 C CNN
 F 1 "ESP-WROOM-32" H 6600 3474 50  0000 C CNN
-F 2 "mqtt-station:esp-wroom-32-devkit" H 6600 2800 50  0001 C CNN
+F 2 "z_ic:esp-wroom-32-devkit" H 6600 2800 50  0001 C CNN
 F 3 "" H 6600 2800 50  0001 C CNN
 F 4 "S7013-ND" H 6600 2800 50  0001 C CNN "Digikey"
 	1    6600 2800

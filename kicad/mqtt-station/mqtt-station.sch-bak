@@ -786,10 +786,8 @@ Wire Wire Line
 Text Label 7700 3300 2    50   ~ 0
 pwm_led_gr
 Wire Wire Line
-	6000 3200 5500 3200
-Wire Wire Line
 	6000 3500 5500 3500
-Text Label 5500 3200 0    50   ~ 0
+Text Label 5500 3600 0    50   ~ 0
 LCD_SDA
 Text Label 5500 3500 0    50   ~ 0
 LCD_SCL
@@ -885,4 +883,9 @@ Text Label 7700 2500 2    50   ~ 0
 rot_1_sw
 Text Label 7700 2600 2    50   ~ 0
 rot_1_a
+Wire Wire Line
+	6000 3600 5500 3600
+NoConn ~ 6000 3100
+NoConn ~ 6000 3200
+NoConn ~ 7200 3000
 $EndSCHEMATC

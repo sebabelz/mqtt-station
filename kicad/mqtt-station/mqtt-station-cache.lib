@@ -281,27 +281,40 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# mqtt-station-rescue_Mounting_Hole-Mechanical
+# power_+3.3V
 #
-DEF mqtt-station-rescue_Mounting_Hole-Mechanical MK 0 40 Y Y 1 F N
-F0 "MK" 0 200 50 H V C CNN
-F1 "mqtt-station-rescue_Mounting_Hole-Mechanical" 0 125 50 H V C CNN
+DEF power_+3.3V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+3.3V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
-$FPLIST
- Mounting?Hole*
- Hole*
-$ENDFPLIST
+ALIAS +3.3V
 DRAW
-C 0 0 50 0 1 50 N
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# mqtt-station_ESP-WROOM-32
+# power_GND
 #
-DEF mqtt-station_ESP-WROOM-32 U 0 40 Y Y 1 F N
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# z_ic_ESP-WROOM-32
+#
+DEF z_ic_ESP-WROOM-32 U 0 40 Y Y 1 F N
 F0 "U" 0 650 50 H V C CNN
-F1 "mqtt-station_ESP-WROOM-32" 0 -1050 50 H V C CNN
+F1 "z_ic_ESP-WROOM-32" 0 -1050 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -336,35 +349,6 @@ X RX2 6 -600 100 100 R 50 50 1 1 B
 X TX2 7 -600 0 100 R 50 50 1 1 B
 X D5 8 -600 -100 100 R 50 50 1 1 B
 X D18 9 -600 -200 100 R 50 50 1 1 B
-ENDDRAW
-ENDDEF
-#
-# power_+3.3V
-#
-DEF power_+3.3V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+3.3V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-ALIAS +3.3V
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +3V3 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_GND
-#
-DEF power_GND #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_GND" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
-X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
