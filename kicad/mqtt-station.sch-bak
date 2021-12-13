@@ -172,7 +172,7 @@ Connection ~ 3000 1700
 Text Notes 650  7600 0    50   ~ 0
 ID_SD and ID_SC PINS:\nThese pins are reserved for HAT ID EEPROM.\n\nAt boot time this I2C interface will be\ninterrogated to look for an EEPROM\nthat identifes the attached board and\nallows automagic setup of the GPIOs\n(and optionally, Linux drivers).\n\nDO NOT USE these pins for anything other\nthan attaching an I2C ID EEPROM. Leave\nunconnected if ID EEPROM not required.
 $Comp
-L mqtt-station-rescue:Mounting_Hole-Mechanical MK1
+L Mechanical:MountingHole MK1
 U 1 1 5834FB2E
 P 2400 7350
 F 0 "MK1" H 2500 7396 50  0000 L CNN
@@ -183,7 +183,7 @@ F 3 "" H 2400 7350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mqtt-station-rescue:Mounting_Hole-Mechanical MK3
+L Mechanical:MountingHole MK3
 U 1 1 5834FBEF
 P 2850 7350
 F 0 "MK3" H 2950 7396 50  0000 L CNN
@@ -194,7 +194,7 @@ F 3 "" H 2850 7350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mqtt-station-rescue:Mounting_Hole-Mechanical MK2
+L Mechanical:MountingHole MK2
 U 1 1 5834FC19
 P 2400 7550
 F 0 "MK2" H 2500 7596 50  0000 L CNN
@@ -205,7 +205,7 @@ F 3 "" H 2400 7550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L mqtt-station-rescue:Mounting_Hole-Mechanical MK4
+L Mechanical:MountingHole MK4
 U 1 1 5834FC4F
 P 2850 7550
 F 0 "MK4" H 2950 7596 50  0000 L CNN
@@ -225,6 +225,7 @@ F 0 "P1" H 2650 3117 50  0000 C CNN
 F 1 "Conn_02x20_Odd_Even" H 2650 3026 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_2x20_P2.54mm_Vertical" H -2250 1050 50  0001 C CNN
 F 3 "" H -2250 1050 50  0001 C CNN
+F 4 "S6104-ND" H 2600 2000 50  0001 C CNN "Digikey"
 	1    2600 2000
 	1    0    0    -1  
 $EndComp
@@ -252,7 +253,7 @@ F 0 "J103" H 1968 4767 50  0000 C CNN
 F 1 "Conn_01x02" H 1968 4676 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2050 4550 50  0001 C CNN
 F 3 "~" H 2050 4550 50  0001 C CNN
-F 4 "" H 2050 4550 50  0001 C CNN "Digikey"
+F 4 "S7000-ND" H 2050 4550 50  0001 C CNN "Digikey"
 	1    2050 4550
 	1    0    0    -1  
 $EndComp
@@ -276,7 +277,7 @@ F 0 "Q102" H 3555 4296 50  0000 L CNN
 F 1 "Q_PMOS_GSD" H 3555 4205 50  0001 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 4350 50  0001 C CNN
 F 3 "~" H 3350 4250 50  0001 C CNN
-F 4 "SSM3J328RLFCT-ND" H 3350 4250 50  0001 C CNN "Digikey"
+F 4 "SSM3J331RLFDKR-ND" H 3350 4250 50  0001 C CNN "Digikey"
 	1    3350 4250
 	1    0    0    -1  
 $EndComp
@@ -288,7 +289,7 @@ F 0 "R102" H 3170 4096 50  0000 L CNN
 F 1 "10k" H 3170 4005 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3030 4050 50  0001 C CNN
 F 3 "~" H 3100 4050 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 3100 4050 50  0001 C CNN "Field4"
+F 4 "RMCF0805FT10K0CT-ND" H 3100 4050 50  0001 C CNN "Digikey"
 	1    3100 4050
 	1    0    0    -1  
 $EndComp
@@ -300,7 +301,7 @@ F 0 "Q103" H 3555 5496 50  0000 L CNN
 F 1 "Q_PMOS_GSD" H 3555 5405 50  0001 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 5550 50  0001 C CNN
 F 3 "~" H 3350 5450 50  0001 C CNN
-F 4 "SSM3J328RLFCT-ND" H 3350 5450 50  0001 C CNN "Digikey"
+F 4 "SSM3J331RLFDKR-ND" H 3350 5450 50  0001 C CNN "Digikey"
 	1    3350 5450
 	1    0    0    -1  
 $EndComp
@@ -312,7 +313,7 @@ F 0 "R103" H 3170 5296 50  0000 L CNN
 F 1 "10k" H 3170 5205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3030 5250 50  0001 C CNN
 F 3 "~" H 3100 5250 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 3100 5250 50  0001 C CNN "Field4"
+F 4 "RMCF0805FT10K0CT-ND" H 3100 5250 50  0001 C CNN "Digikey"
 	1    3100 5250
 	1    0    0    -1  
 $EndComp
@@ -324,7 +325,7 @@ F 0 "Q104" H 3555 6696 50  0000 L CNN
 F 1 "Q_PMOS_GSD" H 3555 6605 50  0001 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3550 6750 50  0001 C CNN
 F 3 "~" H 3350 6650 50  0001 C CNN
-F 4 "SSM3J328RLFCT-ND" H 3350 6650 50  0001 C CNN "Digikey"
+F 4 "SSM3J331RLFDKR-ND" H 3350 6650 50  0001 C CNN "Digikey"
 	1    3350 6650
 	1    0    0    -1  
 $EndComp
@@ -378,21 +379,9 @@ F 0 "R104" H 3170 6496 50  0000 L CNN
 F 1 "10k" H 3170 6405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3030 6450 50  0001 C CNN
 F 3 "~" H 3100 6450 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 3100 6450 50  0001 C CNN "Field4"
+F 4 "RMCF0805FT10K0CT-ND" H 3100 6450 50  0001 C CNN "Digikey"
 	1    3100 6450
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R105
-U 1 1 612BFDA5
-P 3700 4550
-F 0 "R105" V 3493 4550 50  0000 C CNN
-F 1 "210" V 3584 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3630 4550 50  0001 C CNN
-F 3 "~" H 3700 4550 50  0001 C CNN
-F 4 "311-210CRCT-ND" V 3700 4550 50  0001 C CNN "Digikey"
-	1    3700 4550
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R106
@@ -609,7 +598,7 @@ F 0 "R101" H 1020 4896 50  0000 L CNN
 F 1 "10k" H 1020 4805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 880 4850 50  0001 C CNN
 F 3 "~" H 950 4850 50  0001 C CNN
-F 4 "RNCP0805FTD10K0CT-ND" H 950 4850 50  0001 C CNN "Field4"
+F 4 "RMCF0805FT10K0CT-ND" H 950 4850 50  0001 C CNN "Digikey"
 	1    950  4850
 	1    0    0    -1  
 $EndComp
@@ -696,12 +685,12 @@ Wire Wire Line
 Wire Wire Line
 	4600 6950 4600 6800
 $Comp
-L mqtt-station:ESP-WROOM-32 U101
+L z_ic:ESP-WROOM-32 U101
 U 1 1 614160B5
 P 6600 2800
 F 0 "U101" H 6600 3565 50  0000 C CNN
 F 1 "ESP-WROOM-32" H 6600 3474 50  0000 C CNN
-F 2 "mqtt-station:esp-wroom-32-devkit" H 6600 2800 50  0001 C CNN
+F 2 "z_ic:esp-wroom-32-devkit" H 6600 2800 50  0001 C CNN
 F 3 "" H 6600 2800 50  0001 C CNN
 F 4 "S7013-ND" H 6600 2800 50  0001 C CNN "Digikey"
 	1    6600 2800
@@ -888,4 +877,16 @@ Wire Wire Line
 NoConn ~ 6000 3100
 NoConn ~ 6000 3200
 NoConn ~ 7200 3000
+$Comp
+L Device:R R105
+U 1 1 612BFDA5
+P 3700 4550
+F 0 "R105" V 3493 4550 50  0000 C CNN
+F 1 "210" V 3584 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 3630 4550 50  0001 C CNN
+F 3 "~" H 3700 4550 50  0001 C CNN
+F 4 "311-210CRCT-ND" V 3700 4550 50  0001 C CNN "Digikey"
+	1    3700 4550
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
